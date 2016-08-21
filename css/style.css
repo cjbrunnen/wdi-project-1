@@ -1,3 +1,59 @@
 body {
-  background-color: green;
+  background-color: #FFF26B;
 }
+
+h1 {
+  margin: 0 auto;
+}
+
+#rules {
+  height: 600px;
+  margin: 0 auto;
+  background-color: #ff8a6b;
+}
+
+#avocado {
+ height: 115px;
+ width: 90px;
+}
+
+#sombrero {
+  height: 115px;
+  width: 177px;
+}
+
+#tacoGif {
+  height: 115px;
+  width: 123px;
+}
+
+#chilli {
+  height: 115px;
+  width: 155px;
+}
+
+#board {
+  height: 500px;
+  margin: 0 auto;
+  background-color: #00CB00;
+}
+
+.square {
+  margin: 0 auto;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  float: left;
+}
+
+#scoreBoard {
+  margin: 0 auto;
+  clear: both;
+  background-color: #474350;
+}
+
+footer {
+  margin: 0 auto;
+  clear: both;
+}
+
