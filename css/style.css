@@ -9,6 +9,10 @@ ul {
   padding: 0;
 }
 
+ul li {
+  list-style: none;
+}
+
 #theme {
   display: none;
 }
@@ -27,7 +31,7 @@ h1 {
 }
 
 #rules {
-  height: 200px;
+  height: 600px;
   margin: 0 auto;
   background-color: #ff8a6b;
   display: inline-block;

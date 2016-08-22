@@ -24,7 +24,7 @@ var objects = [
     name: "avocado",
     img: "./css/avoForWeb.png",
     speed: 1500,
-    score: 2
+    score: 1
   }, {
     name: "sombrero",
     img: "http://vignette2.wikia.nocookie.net/clubpenguin/images/2/2f/Mini_Sombrero.png/revision/latest?cb=20140408163249",
@@ -50,7 +50,6 @@ function start() {
 function showSquare(array) {
   var square    = array[Math.floor(Math.random()*array.length)];
   var character = objects[Math.floor(Math.random()*objects.length)];
-  console.log(character);
 
   $(square).css('background-image', 'url('+ character.img + ')');
   $(square).on('click', function() {
@@ -75,5 +74,9 @@ function counterCount(counter) {
 function logScore(character) {
   score += character.score
   // select html score and populate with new score
+  
+        $(".scoreBoard").html(score);
+
+
   console.log(score);
 }
