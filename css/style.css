@@ -23,6 +23,7 @@ h1 {
   background-color: #ff8a6b;
   color: #103010;
   text-align: center;
+  list-style: none;
 }
 
 #rules {

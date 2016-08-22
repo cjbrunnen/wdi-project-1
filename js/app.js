@@ -92,8 +92,6 @@
 
 
 
-
-
 // // var $   = function (id) { return document.getElementById(id); }
 // // var add = function(fld,val) {
 // //   return (parseFloat(fld.value)+val).toFixed(2);
@@ -139,7 +137,6 @@ $(start);
 var score   = 0;
 var counter = 0;
 var squaresArray = [];
-var charater  = objects
 var playerScore = 0;
 var objects = [
 {
@@ -164,19 +161,23 @@ function start() {
   var squares = $('.square')
 
   setInterval(function() {
-    showSquare(squares)
+    showSquare(squares);
   }, 2000);
 }
 
 function showSquare(array) {
   var square    = array[Math.floor(Math.random()*array.length)];
-  var charater  = objects[Math.floor(Math.random()*objects.length)];
+  var character  = objects[Math.floor(Math.random()*objects.length)];
 
-  $(square).css('background-image', 'url(' + charater.img + ')');
+  $(square).css('background-image', 'url(' + character.img + ')');
   // add event listener to selected box
-  $(square).on("click", logScore)
+  $(this.square).on("click", logScore());
 }
+
 function logScore(){
+  $.each(objects, function (index, value) {
+    console.log($(this).attr('score'));
+  });
   var $playerScore 
   ++ playerScore;
   $(".scoreBoard").html(playerScore);
@@ -191,16 +192,15 @@ function logScore(){
 //   });
 //   }
 
-setTimeout(function() {
-  $(square).css('background-image', 'none');
-  counter +=1;
+// setTimeout(function() {
+//   $(square).css('background-image', 'none');
+//   counter +=1;
 
-  console.log(counter);
-}, charater.speed);
+//   console.log(counter);
+// }, character.speed);
 
 
 // set function for a timer
 // when timer hits 0, clearInterval()
-
 
 
