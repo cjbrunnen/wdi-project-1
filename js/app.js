@@ -139,25 +139,26 @@ $(start);
 var score   = 0;
 var counter = 0;
 var squaresArray = [];
+var charater  = objects
+var playerScore = 0;
 var objects = [
-  {
-    name: "avocado",
-    img: "./css/avoForWeb.png",
-    speed: 1500,
-    score: 1
-  }, {
-    name: "sombrero",
-    img: "http://vignette2.wikia.nocookie.net/clubpenguin/images/2/2f/Mini_Sombrero.png/revision/latest?cb=20140408163249",
-    speed: 1000,
-    score: 2
-  }, {
-    name: "chilli",
-    img: "http://sweetclipart.com/multisite/sweetclipart/files/red_chili_pepper.png",
-    speed: 1500,
-    score: -2
-  }
+{
+  name: "avocado",
+  img: "./css/avoForWeb.png",
+  speed: 1500,
+  score: 1
+}, {
+  name: "sombrero",
+  img: "http://vignette2.wikia.nocookie.net/clubpenguin/images/2/2f/Mini_Sombrero.png/revision/latest?cb=20140408163249",
+  speed: 1000,
+  score: 2
+}, {
+  name: "chilli",
+  img: "http://sweetclipart.com/multisite/sweetclipart/files/red_chili_pepper.png",
+  speed: 1500,
+  score: -2
+}
 ]
-
 
 function start() {
   var squares = $('.square')
@@ -173,12 +174,13 @@ function showSquare(array) {
 
   $(square).css('background-image', 'url(' + charater.img + ')');
   // add event listener to selected box
-  $(square).on("click", showScore)
+  $(square).on("click", logScore)
 }
-    function showScore(){
-    score += character.score
-    console.log(square);
-  };
+function logScore(){
+  var $playerScore 
+  ++ playerScore;
+  $(".scoreBoard").html(playerScore);
+};
 
 
   // increment the score per hit
@@ -189,12 +191,12 @@ function showSquare(array) {
 //   });
 //   }
 
-  setTimeout(function() {
-    $(square).css('background-image', 'none');
-    counter +=1;
+setTimeout(function() {
+  $(square).css('background-image', 'none');
+  counter +=1;
 
-    console.log(counter);
-  }, charater.speed);
+  console.log(counter);
+}, charater.speed);
 
 
 // set function for a timer
