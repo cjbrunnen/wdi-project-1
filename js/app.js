@@ -168,22 +168,26 @@ function start() {
 }
 
 function showSquare(array) {
-  var square = array[Math.floor(Math.random()*array.length)];
-  var charater = objects[Math.floor(Math.random()*objects.length)];
-
-  console.log(square, charater.img);
+  var square    = array[Math.floor(Math.random()*array.length)];
+  var charater  = objects[Math.floor(Math.random()*objects.length)];
 
   $(square).css('background-image', 'url(' + charater.img + ')');
   // add event listener to selected box
-  $(square).on("click", storeScore())
+  $(square).on("click", showScore)
+}
+    function showScore(){
+    score += character.score
+    console.log(square);
+  };
+
 
   // increment the score per hit
 
-function storeScore() {
-  squaresArray.push({
-    object.score: "value"
-  });
-  }
+// function storeScore() {
+//   squaresArray.push({
+//     objects(score.val)
+//   });
+//   }
 
   setTimeout(function() {
     $(square).css('background-image', 'none');
@@ -191,7 +195,7 @@ function storeScore() {
 
     console.log(counter);
   }, charater.speed);
-}
+
 
 // set function for a timer
 // when timer hits 0, clearInterval()
