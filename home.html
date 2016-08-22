@@ -2,29 +2,45 @@
 <html>
 <head>
   <title>Project One - Guacamole!</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/app.js"></script>
   <!-- <link charset=> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
+<button id="mute">mute</button>
+<!-- <audio autoplay id="theme" loop>
+  <source src="gameMusic.mp3" type="audio/mpeg" loop="loop">
+</audio> -->
+<div id="startScreen">
   <h1><img src="http://static.wixstatic.com/media/2c07ef_02b0068598d316068fa2136b87d82806.png_srz_870_245_85_22_0.50_1.20_0.00_png_srz"></h1>
   
-  <button class="buttons"  id="vamanos">¡Vamanos!</button> <!-- charset!!! -->
+  <button id="rulesPage">¡Vamanos!</button> <!-- charset!!! -->
   <!-- <button class="buttons"  id="onePlayer">One Player</button>
   <button class="buttons"  id="twoPlayer">Two Player</button> -->
-  <button class="buttons"  id="home">HOME</button>
-  <button class="buttons"  id="gotIt">Okay, got it. Let's whack!</button>
-
+  </div>  
+  
   <div id="rules">
     <ul>
-      <li><img id="avocado" src="http://previews.123rf.com/images/seamartini/seamartini1403/seamartini140300198/26541534-Green-tropical-avocado-fruit-with-a-wide-toothy-smile-and-pink-tongue-for-a-delicious-salad-ingredie-Stock-Vector.jpg">Whack the AVOCADOS to win 1pt</li>
+      <li><img id="avocado" src="./css/avoForWeb.png">Whack the AVOCADOS to win 1pt</li>
       <li>Whack the SOMBREROS to win 2pts<img id="sombrero" src="http://vignette2.wikia.nocookie.net/clubpenguin/images/2/2f/Mini_Sombrero.png/revision/latest?cb=20140408163249"></li>
       <li>Don't whack the CHILLI! -2pts!<img id="chilli" src="http://sweetclipart.com/multisite/sweetclipart/files/red_chili_pepper.png"></li>
       <li><img id="tacoGif" src="http://66.media.tumblr.com/a6fb0c2ac0c5b74ef910083bea480406/tumblr_nefxiuSGpt1tha1vgo1_250.gif">BONUS: Whack the SPINNING TACO to win 4pts!!!</li>
     </ul>
+    <button class="buttons"  id="gotIt">Okay, got it. Let's whack!</button>
   </div>
-  <div id="board">
+  
+
+  <span>Level:</span>
+  <select class="level">
+    <option value="easy">Easy</option>
+    <option value="beginner">Beginner</option>
+    <option value="intermediate">Intermediate</option>
+    <option value="advanced">Advanced</option>
+  </select>
+  
+  <div id="board" class="whackamole">
     <div id="timer"></div>
     <ul>
       <li class="square" value="1">1</li>
@@ -37,12 +53,11 @@
       <li class="square" value="8">8</li>
       <li class="square" value="9">9</li>
     </ul>
-
+    <button class="buttons"  id="home">HOME</button>
     <div class="scoreBoard">Score</div>
     <input type="button" value="reset" id="reset" /> 
     <!-- <div class="scoreBoard">Player two score</div> -->
   </div>
-
   <footer>Made by cjbrunnen</footer>
 </body>
 </html>

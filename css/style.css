@@ -1,19 +1,39 @@
 body {
   background-color: #FFF26B;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#theme {
+  display: none;
 }
 
 h1 {
   margin: 0 auto;
 }
 
+#rulesPage {
+  margin: 0 auto;
+  padding: 10 20;
+  background-color: #ff8a6b;
+  color: #103010;
+  text-align: center;
+}
+
 #rules {
   height: 600px;
   margin: 0 auto;
   background-color: #ff8a6b;
+  display: inline-block;
 }
 
 #avocado {
- height: 115px;
+ height: 130px;
  width: 90px;
 }
 
@@ -33,17 +53,28 @@ h1 {
 }
 
 #board {
-  height: 500px;
-  margin: 0 auto;
+  height: 525px;
+  width: 1000px;
   background-color: #00CB00;
+  display: inline-block;
+}
+
+#board ul {
+  margin: 0 auto;
+  list-style: none;
+  width: 475px;
 }
 
 .square {
-  margin: 0 auto;
+  border: 2px solid black;
+  margin: 1px;
   text-align: center;
-  height: 20px;
-  width: 20px;
+  height: 150px;
+  width: 150px;
   float: left;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
 }
 
 #scoreBoard {
@@ -55,5 +86,9 @@ h1 {
 footer {
   margin: 0 auto;
   clear: both;
+}
+
+.show {
+  background-color: blue;
 }
 
