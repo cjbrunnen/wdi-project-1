@@ -27,7 +27,7 @@ h1 {
 }
 
 #rules {
-  height: 600px;
+  height: 200px;
   margin: 0 auto;
   background-color: #ff8a6b;
   display: inline-block;
@@ -76,6 +76,7 @@ h1 {
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
+  list-style: none;
 }
 
 #scoreBoard {
