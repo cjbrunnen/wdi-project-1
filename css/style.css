@@ -19,16 +19,7 @@ ul li {
 }
 
 h1 {
-  margin: 0 auto;
-}
-
-#rulesPage {
-  margin: 0 auto;
-  padding: 10 20;
-  background-color: #ff8a6b;
-  color: #103010;
-  text-align: center;
-  list-style: none;
+  margin: 20px auto;
 }
 
 #rules {
@@ -39,37 +30,38 @@ h1 {
   display: inline-block;
   font-family: 'Londrina Outline', cursive;
   font-size: 40px;
+  letter-spacing: 1px;
   font-weight: bold;  
   line-height: 10px;
   border: 5px solid #474350;
 }
 
-#rules ul li {
- 
-}
-
 #avocado {
- height: 90px;
- width: 60px;
+ height: 119px;
+ width: 88px;
+ margin: 17px 34px 0;
 }
 
 #sombrero {
-  height: 90px;
-  width: 150px;
+  height: 100px;
+  width: 140px;
+  margin: 20px 34px;
 }
 
 #tacoGif {
-  height: 100px;
-  width: 98px;
+  height: 113px;
+  width: 131px;
+  margin: 17px 34px;
 }
 
 #chilli {
-  height: 80px;
-  width: 100px;
+  height: 102px;
+  width: 130px;
+  margin: 17px 34px;
 }
 
 #board {
-  height: 670px;
+  height: 729px;
   width: 1078px;
   background-color: #5bd7b2;
   display: inline-block;
@@ -85,11 +77,12 @@ h1 {
 
 .square {
   border: 2px solid black;
-  margin: 17px;
+  margin: 10px 17px;
   text-align: center;
   height: 150px;
   width: 61px;
   float: left;
+  background-color: #474350;
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
@@ -97,15 +90,21 @@ h1 {
   display: inline-block;
 }
 
-#scoreBoard {
+.scoreBoard {
   margin: 0 auto;
   clear: both;
-  background-color: #474350;
+  background-color: #5bd7b2;
+  color: #474350;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 53px;
 }
 
 footer {
   margin: 0 auto;
   clear: both;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .show {
@@ -113,16 +112,23 @@ footer {
 }
 
 #timer {
-  width: 100%;
+  width: 40%;
+  margin: 0 auto;
   text-align: center;
   font-size: 30px;
   color: #5bd7b2;
-  background-color: #474350;
+  background-color: #FFF26B;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 #go {
   background-color: #ff8a6b;
   color: #FFF26B;
   margin: 5px;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 50px;
+  font-weight: bold;
 }
 
