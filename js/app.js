@@ -103,7 +103,8 @@ function logScore(character) {
 
 function endGame(counterTwo) {
   this.clearInterval(counterTwo);//clear all intervals
-  this.document.getElementById('board').onclick = null; 
+  // this.document.getElementById('board').onclick = null; 
+  $('#board').on = null;
   alert("GAME OVER!" + "\nYou made " + score + " pots of GUACAMOLE! ¡Andale!");
 }
 

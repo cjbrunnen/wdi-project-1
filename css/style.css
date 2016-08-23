@@ -33,6 +33,7 @@ h1 {
 
 #rules {
   height: 600px;
+  width: 1078px;
   margin: 0 auto;
   background-color: #ff8a6b;
   display: inline-block;
@@ -40,7 +41,7 @@ h1 {
   font-size: 40px;
   font-weight: bold;  
   line-height: 10px;
-  border: 5px solid;
+  border: 5px solid #474350;
 }
 
 #rules ul li {
@@ -48,49 +49,52 @@ h1 {
 }
 
 #avocado {
- height: 130px;
- width: 90px;
+ height: 90px;
+ width: 60px;
 }
 
 #sombrero {
-  height: 115px;
-  width: 177px;
+  height: 90px;
+  width: 150px;
 }
 
 #tacoGif {
-  height: 115px;
-  width: 123px;
+  height: 100px;
+  width: 98px;
 }
 
 #chilli {
-  height: 115px;
-  width: 155px;
+  height: 80px;
+  width: 100px;
 }
 
 #board {
-  height: 525px;
-  width: 1000px;
-  background-color: #00CB00;
+  height: 670px;
+  width: 1078px;
+  background-color: #5bd7b2;
   display: inline-block;
+  border: 5px solid #474350;
 }
 
 #board ul {
   margin: 0 auto;
   list-style: none;
-  width: 475px;
+  width: 656px;
+  display: inline-block;
 }
 
 .square {
   border: 2px solid black;
-  margin: 1px;
+  margin: 17px;
   text-align: center;
   height: 150px;
-  width: 150px;
+  width: 61px;
   float: left;
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
   list-style: none;
+  display: inline-block;
 }
 
 #scoreBoard {
@@ -112,7 +116,13 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 30px;
-  color: #5bd752;
+  color: #5bd7b2;
   background-color: #474350;
+}
+
+#go {
+  background-color: #ff8a6b;
+  color: #FFF26B;
+  margin: 5px;
 }
 
