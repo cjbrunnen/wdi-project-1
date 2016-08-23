@@ -1,9 +1,10 @@
 $(start);
 
-var score        = 0;
-var counter      = 0;
-var squaresArray = [];
-var playerScore  = 0;
+var score;
+var counter;
+var squaresArray;
+var playerScore;
+var count;
 var squares      = $('.square');
 var timerInterval, squaresInterval;
 var objects      = [
@@ -50,8 +51,14 @@ function start(){
 }
 
 function go() {
-  var count     = 5;
+  score         = 0;
+  counter       = 0;
+  squaresArray  = [];
+  playerScore   = 0;
+  count         = 30;
   timerInterval = setInterval(timer, 1000);
+  $("#timer").html(count);
+  $(".scoreBoard").empty();
 
   function timer() {
     count -= 1;  
@@ -75,6 +82,7 @@ function showSquare(array) {
   var character = objects[Math.floor(Math.random()*objects.length)];
 
   $(square).css('background-image', 'url('+ character.img + ')');
+  $(square).off();
   $(square).on('click', function() {
     logScore(character);
   })
@@ -83,7 +91,6 @@ function showSquare(array) {
     $(square).css('background-image', 'none');
     $(square).off();
     counter++;
-    // counterCount(counter, character)
   }, 1000)
 }
 
@@ -92,14 +99,9 @@ function logScore(character) {
   $(".scoreBoard").html(score);
 }
 
-// function counterCount(counter, character) {// if more than 3 misses APPART FROM CHILLIS
-//   if (counter === 3) {                     // then endGame
-//     endGame();
-//   }
-// }
-
 function endGame(counterTwo) {
   $(".scoreBoard").html("GAME OVER!" + "\nYou made " + score + " pots of GUACAMOLE! ¡Andale!");
+  $("#go").html("Play Again")
   timerInterval   = clearInterval(timerInterval);
   squaresInterval = clearInterval(squaresInterval);
 
