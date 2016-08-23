@@ -1,17 +1,3 @@
-//   var theme = document.getElementById("theme");
-//   theme.play();
-//   document.getElementById('theme').muted = false;
-// }
-
-// var button = document.getElementById("mute");
-// this.addEventListener("click", function (){
-//   if (theme.muted === false) {    
-//    theme.muted = true;
-//  } else {
-//   theme.muted = false;
-// }
-// });
-
 $(start);
 
 var score   = 0;
@@ -43,22 +29,44 @@ var objects = [
 }
 ]
 
-var count = 30;
-var counterTwo = setInterval(timer, 1000);
+// function themePlay() {
+//   $('#theme').play();
+//   $('#theme').muted = false;
+// }
 
-function timer() {
-  count -= 1;  
-  if (count == 0){
-    this.clearInterval(counterTwo);
-    this.document.getElementById('board').onclick = null; 
-    alert("GAME OVER!" + "\nYou made " + score + " grams of GUACAMOLE! ¡Andale!");
-  }
-  document.getElementById("timer").innerHTML = count;
+// function mute(){
+//   $('#mute').on("click", function (){
+//   if (theme.muted === false) {    
+//    theme.muted = true;
+//  } else {
+//   theme.muted = false;
+// }
+// }); 
+// };
+
+function start(){
+  $('#go').on('click', go)
 }
 
-function start() {
-  var squares = $('.square')
+function go() {
 
+  var count       = 30;
+  var counterTwo  = setInterval(timer, 1000);
+
+  function timer() {
+    count -= 1;  
+    if (count == 0){
+      endGame(counterTwo);
+    }
+    document.getElementById("timer").innerHTML = count;
+  }
+
+
+  beginGame()
+}
+
+function beginGame() {
+  var squares = $('.square')
 
   setInterval(function() {
     showSquare(squares);
@@ -78,13 +86,25 @@ function showSquare(array) {
     $(square).css('background-image', 'none');
     $(square).off();
     counter++;
-    counterCount(counter)
+    counterCount(counter, character)
   }, 1000)
 }
 
 function logScore(character) {
   score += character.score
   $(".scoreBoard").html(score);
+}
+
+// function counterCount(counter, character) {
+//   if (counter === 3) {
+//     endGame();
+//   }
+// }
+
+function endGame(counterTwo) {
+  this.clearInterval(counterTwo);//clear all intervals
+  this.document.getElementById('board').onclick = null; 
+  alert("GAME OVER!" + "\nYou made " + score + " pots of GUACAMOLE! ¡Andale!");
 }
 
 
