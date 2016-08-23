@@ -11,6 +11,7 @@ ul {
 
 ul li {
   list-style: none;
+  padding: 0 60px;
 }
 
 #theme {
@@ -35,6 +36,15 @@ h1 {
   margin: 0 auto;
   background-color: #ff8a6b;
   display: inline-block;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 40px;
+  font-weight: bold;  
+  line-height: 10px;
+  border: 5px solid;
+}
+
+#rules ul li {
+ 
 }
 
 #avocado {
@@ -96,5 +106,13 @@ footer {
 
 .show {
   background-color: blue;
+}
+
+#timer {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #5bd752;
+  background-color: #474350;
 }
 
