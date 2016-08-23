@@ -7,10 +7,10 @@
 My abuela has asked me to make some guacamole for her as soon as possible so I'm enlisting your help.
 In GUACAMOLE, the aim is to let the music take you away... oh, and to make as much guac as you can! 
 
-#### [CLICK HERE to play GUACAMOLE now!!!]
+#### [FOLLOW THE LINK BELOW to play GUACAMOLE now!!!]
 (guacamole-cjbrunnen.herokuapp.com/ "¡Vamanos!")
 
-### Rules of the game::::
+### ::::Rules of the game::::
 Upon hitting the *START* button, you will have 30 seconds to whack that guac and rack up your scores. Your points will turn into pots of guacamole, so whack as many as you can! 
 Be careful though! - there are good and bad characters in this game. 
 Hit an *avocado* to win 1 point, a *sombrero* for two points and a **spinning taco** for 5 points! Avoid the *chillis* though, making it too hot looses you 2 points a piece!!! And my abuela doesn't like it too spicy. So keep it mild, child.
