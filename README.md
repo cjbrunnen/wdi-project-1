@@ -8,7 +8,8 @@ My abuela has asked me to make some guacamole for her as soon as possible so I'm
 In GUACAMOLE, the aim is to let the music take you away... oh, and to make as much guac as you can! 
 
 #### [FOLLOW THE LINK BELOW to play GUACAMOLE now!!!]
-(guacamole-cjbrunnen.herokuapp.com/ "¡Vamanos!")
+guacamole-cjbrunnen.herokuapp.com/ 
+¡Vamanos!
 
 ### ::::Rules of the game::::
 Upon hitting the *START* button, you will have 30 seconds to whack that guac and rack up your scores. Your points will turn into pots of guacamole, so whack as many as you can! 
